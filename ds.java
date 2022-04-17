@@ -4,7 +4,7 @@ import java.util.*;
 public class ds{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter drive letter: ");
+        System.out.print("Enter drive letter: ");
         String driveLetter = scan.nextLine();
         scan.close();
 
@@ -19,8 +19,20 @@ public class ds{
         }
         
         for (String x : titles){
-            //System.out.println(x);
+            if (x.charAt(5) == '-' &&
+                x.charAt(4) == x.charAt(6) &&
+                x.charAt(4) == ' '
+            ){
+                x = x.substring(7,x.indexOf(')') + 1);
+            }
+            else {
+                x = x.substring(0,x.indexOf(')') + 1);
+            //x = x.substring(0,x.length()-4 );
+            }
+            
+            System.out.println(x);
         }
+        System.out.println();
 
     }
 }

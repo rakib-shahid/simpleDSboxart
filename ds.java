@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class ds{
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter drive letter: ");
         String driveLetter = scan.nextLine();
@@ -10,30 +10,25 @@ public class ds{
 
         File folder = new File(driveLetter+":/roms/nds");
         File[] listOfFiles = folder.listFiles();
-        ArrayList<String> titles = new ArrayList<String>();
+
+        ArrayList<String> serials = new ArrayList<String>();
 
         for (File file : listOfFiles) {
             if (file.isFile()) {
-                titles.add(file.getName());
+                FileInputStream fileIn = new FileInputStream(file.toPath().toString());
+                fileIn.skip(12);
+                String gameSerial = "";
+                for (int i = 0; i < 4; i++){
+                    gameSerial += (char)fileIn.read();
+                }
+                serials.add(gameSerial);
             }
         }
         
-        for (String x : titles){
-            if (x.charAt(5) == '-' &&
-                x.charAt(4) == x.charAt(6) &&
-                x.charAt(4) == ' '
-            ){
-                x = x.substring(7,x.indexOf(')') + 1);
-            }
-            else {
-                x = x.substring(0,x.indexOf(')') + 1);
-                
-            //x = x.substring(0,x.length()-4 );
-            }
-            
-            System.out.println(x);
+        for (String gameSerial : serials){
+            System.out.println(gameSerial);
         }
-        System.out.println();
+        
 
     }
 }

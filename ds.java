@@ -27,6 +27,7 @@ public class ds{
             }
             else {
                 x = x.substring(0,x.indexOf(')') + 1);
+                
             //x = x.substring(0,x.length()-4 );
             }
             

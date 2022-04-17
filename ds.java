@@ -1,4 +1,5 @@
 import java.io.*;
+import java.nio.file.Files;
 import java.util.*;
 
 public class ds{
@@ -8,9 +9,13 @@ public class ds{
         System.out.print("Enter drive letter: ");
         String driveLetter = scan.nextLine();
         scan.close();
+        String romsPath = driveLetter + ":/roms/nds";
+
+        //UNCOMMENT AND CHANGE THIS IF YOUR ROMS PATH IS DIFFERENT FROM "D:/roms/nds"
+        //romsPath = "put path here";
 
         //reads files in default rom location
-        File folder = new File(driveLetter+":/roms/nds");
+        File folder = new File(romsPath);
         File[] fileList = folder.listFiles();
 
         //arrays for storing serial and file names
@@ -37,6 +42,18 @@ public class ds{
         //print to terminal (for testing)
         for (int i = 0; i < serials.size(); i++){
             System.out.println("Serial = " + serials.get(i) + "\nFile Name = " + titles.get(i) + "\n");
+        }
+        
+
+        
+        for (int i = 0; i < serials.size(); i++){
+            File dest = new File(driveLetter+File.separator+"_nds"+File.separator+"TWiLightMenu"+File.separator+"boxart"+File.separator+serials.get(i)+".png");
+            File source = new File("coverS"+File.separator+"US"+File.separator+serials.get(i)+".png");
+            try {
+                Files.copy(source.toPath(), dest.toPath());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         
 

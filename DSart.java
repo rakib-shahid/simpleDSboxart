@@ -72,13 +72,11 @@ public class DSart{
                     img = ImageIO.read(url);
                 }
                 
-                ImageIO.write(img, "png", dest);
             }
             //Japan Rom
             else if (serials.get(i).charAt(3) == 'J'){
                 URL url = new URL("https://art.gametdb.com/ds/coverS/JA/"+serials.get(i)+".png");
                 img = ImageIO.read(url);
-                ImageIO.write(img, "png", dest);
             }
             //EU Rom
             else {
@@ -89,16 +87,11 @@ public class DSart{
 
 
             //Copies to boxart folder
-            try {
+            if (!dest.exists()){
                 ImageIO.write(img, "png", dest);
-            } 
-            catch (IOException a) {
-                if (a.toString().contains("NoSuchFileException")){
-                    System.out.println("Cannot find box art, moving on...");
-                }
-                else if (a.toString().contains("FileAlreadyExistsException")){
-                    System.out.println("Already have box art, moving on...");
-                }
+            }
+            else {
+                System.out.println("Already have, moving on...");
             }
             System.out.println();
 

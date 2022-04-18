@@ -10,7 +10,8 @@ https://github.com/KirovAir/TwilightBoxart
 
 Download and extract.
 
-In the same directory run in command prompt: 
+Compile and run
+> javac ds.java
 > java ds
 
 You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic

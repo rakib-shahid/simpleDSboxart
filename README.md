@@ -11,9 +11,9 @@ https://github.com/KirovAir/TwilightBoxart
 Download and extract.
 
 Compile and run
-> javac ds.java
+> javac DSart.java
 
-> java ds
+> java DSart
 
 You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
 

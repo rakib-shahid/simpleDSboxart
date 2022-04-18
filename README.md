@@ -37,4 +37,4 @@ and the arts are placed in:
 (the path strings are commented, uncomment and change them as necessary)
 
 
-### Box arts are from https://www.gametdb.com/DS/Downloads
+### Box arts are from https://www.gametdb.com/DS/

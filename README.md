@@ -12,6 +12,7 @@ Download and extract.
 
 Compile and run
 > javac ds.java
+
 > java ds
 
 You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic

@@ -20,7 +20,12 @@ public class DSart{
         //romsPath = "put roms path here";
 
         //reads files in default rom location
-        File[] romsFolder = new File(romsPath).listFiles();
+        FileFilter ndsFiles = new FileFilter() {
+            public boolean accept(File rom){
+                return rom.getName().endsWith(".nds");
+            }
+        };
+        File[] romsFolder = new File(romsPath).listFiles(ndsFiles);
 
         //arrays for storing serial and file names
         ArrayList<String> titles = new ArrayList<String>();

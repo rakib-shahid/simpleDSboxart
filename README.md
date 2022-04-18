@@ -3,7 +3,7 @@ Gets box arts for DS games and places them in the proper folder for Twilight Men
 
 Currently only supports **US**, **EU**, and **Japan** roms
 
-Untested on Mac and Linux
+Only works for Windows 
 
 ### TwilightBoxart wasn't working one day so I decided to make this.
 https://github.com/KirovAir/TwilightBoxart

@@ -19,7 +19,7 @@ To bring up the directory picker GUI,
 
 Run with 
 
-> java DSart
+> java DSboxart
 
 OR
 
@@ -27,7 +27,7 @@ To automatically use defautl TwilightMenu locations (SD Card letter still requir
 
 Use
 
-> java DSart 1
+> java DSboxart 1
 
 
 You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic

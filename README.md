@@ -23,7 +23,7 @@ Run with
 
 OR
 
-To automatically use defautl TwilightMenu locations (SD Card letter still required (WINDOWS ONLY))
+To automatically use default TwilightMenu locations (SD Card letter still required (WINDOWS ONLY))
 
 Use
 

@@ -12,10 +12,18 @@ https://github.com/KirovAir/TwilightBoxart
 
 Download and extract.
 
-Compile and run
-> javac DSart.java
+Compile 
+> javac DSboxart.java
+
+Run with 
 
 > java DSart
+
+To bring up the directory picker GUI, OR
+
+> java DSart 1
+
+To automatically use defautl TwilightMenu locations (SD Card letter still required (WINDOWS ONLY))
 
 You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
 

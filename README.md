@@ -3,7 +3,6 @@ Gets box arts for DS games and places them in the proper folder for Twilight Men
 
 Currently only supports **US**, **EU**, and **Japan** roms
 
-Only works for Windows 
 
 ### TwilightBoxart wasn't working one day so I decided to make this
 https://github.com/KirovAir/TwilightBoxart
@@ -15,7 +14,7 @@ Download and extract.
 Compile 
 > javac DSboxart.java
 
-To bring up the directory picker GUI,
+To bring up the directory picker GUI (All OS),
 
 Run with 
 
@@ -23,7 +22,7 @@ Run with
 
 OR
 
-To automatically use default TwilightMenu locations (SD Card letter still required (WINDOWS ONLY))
+To automatically use default TwilightMenu locations (SD Card letter still required (Windows only))
 
 Use
 

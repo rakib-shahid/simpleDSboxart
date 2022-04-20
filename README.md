@@ -24,7 +24,7 @@ and select your roms location, then select your boxart location, everything else
 
 OR
 
-To automatically use default TwilightMenu locations (SD Card letter still required (Windows only))
+(Windows only) To automatically use default TwilightMenu locations (SD Card letter still required)
 
 Use
 

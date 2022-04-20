@@ -20,6 +20,8 @@ Run with
 
 > java DSboxart
 
+and select your roms location, then select your boxart location, everything else is automatic
+
 OR
 
 To automatically use default TwilightMenu locations (SD Card letter still required (Windows only))
@@ -28,23 +30,7 @@ Use
 
 > java DSboxart 1
 
-
-You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
-
-
-
-
-# You might have to change file paths in DSart.java.
-
-By default the roms are read from:   
-
-**"driveLetter:/roms/nds"**
-
-and the arts are placed in:          
-
-**"driveLetter:\_nds\TWiLightMenu\boxart"**
-
-(the path strings are commented, uncomment and change them as necessary)
+You will then be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
 
 
 ### Box arts are from https://www.gametdb.com/DS/

@@ -1,10 +1,9 @@
 # simpleDSboxart
-Gets box arts for DS games and places them in the proper folder for Twilight Menu
+Gets box arts for Nintendo DS games 
 
 Currently only supports **US**, **EU**, and **Japan** roms
 
-
-### TwilightBoxart wasn't working one day so I decided to make this
+Created when TwilightBoxart wasn't working properly
 https://github.com/KirovAir/TwilightBoxart
 
 # To Run

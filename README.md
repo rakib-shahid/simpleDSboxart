@@ -1,38 +1,35 @@
 # simpleDSboxart
-Gets box arts for DS games and places them in the proper folder for Twilight Menu
+Gets box arts for Nintendo DS games 
 
 Currently only supports **US**, **EU**, and **Japan** roms
 
-Only works for Windows 
-
-### TwilightBoxart wasn't working one day so I decided to make this
+Created when TwilightBoxart wasn't working properly
 https://github.com/KirovAir/TwilightBoxart
 
 # To Run
 
 Download and extract.
 
-Compile and run
-> javac DSart.java
+Compile 
+> javac DSboxart.java
 
-> java DSart
+To bring up the directory picker GUI (All OS),
 
-You will be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
+Run with 
 
+> java DSboxart
 
+and select your roms location, then select your boxart location, everything else is automatic
 
+OR
 
-# You might have to change file paths in DSart.java.
+(Windows only) To automatically use default TwilightMenu locations (SD Card letter still required)
 
-By default the roms are read from:   
+Use
 
-**"driveLetter:/roms/nds"**
+> java DSboxart 1
 
-and the arts are placed in:          
-
-**"driveLetter:\_nds\TWiLightMenu\boxart"**
-
-(the path strings are commented, uncomment and change them as necessary)
+You will then be prompted for the drive letter of the SD Card, enter it and press enter, everything else is automatic
 
 
 ### Box arts are from https://www.gametdb.com/DS/

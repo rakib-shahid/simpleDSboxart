@@ -67,6 +67,7 @@ public class DSboxart{
         }
 
         System.out.println(destination);
+        int newArts = 0;
         for (int i = 0; i < serials.size(); i++){
             //print current working rom
             System.out.println("Getting:");
@@ -97,6 +98,7 @@ public class DSboxart{
             }
             if (!dest.exists()){
                 ImageIO.write(img, "png", dest);
+                newArts++;
             }
             else {
                 System.out.println("Already have, moving on...");
@@ -104,6 +106,6 @@ public class DSboxart{
             System.out.println();
         }
 
-        System.out.println("Complete!\n");
+        System.out.println("Complete!\n"+newArts+" new boxarts aquired.");
     }
 }

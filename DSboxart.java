@@ -19,6 +19,7 @@ public class DSboxart{
         String romsPath = "";
         String destination = "";
         if (input == 1){
+            System.out.println("Using Default TwilightMenu Locations:");
             System.out.print("\nEnter drive letter of SD Card: ");
             String driveLetter = scan.nextLine();
             scan.close();
@@ -27,12 +28,14 @@ public class DSboxart{
             destination = driveLetter+":"+File.separator+"_nds"+File.separator+"TWiLightMenu"+File.separator+"boxart"+File.separator;            
         }
         else {
+            System.out.println("Using GUI:");
             scan.close();
             JFileChooser directoryPicker = new JFileChooser();
             directoryPicker.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
             directoryPicker.setDialogTitle("Pick ROMS Location");
             directoryPicker.showOpenDialog(directoryPicker);
             romsPath = directoryPicker.getSelectedFile().toString();
+
 
         
             directoryPicker.setDialogTitle("Pick Box Art Location");
@@ -67,7 +70,7 @@ public class DSboxart{
         for (int i = 0; i < serials.size(); i++){
             //print current working rom
             System.out.println("Getting:");
-            File dest = new File(destination+serials.get(i)+".png");
+            File dest = new File(destination+File.separator+serials.get(i)+".png");
             System.out.println("Serial = " + serials.get(i) + "\nFile Name = " + titles.get(i));
             BufferedImage img;
             //US Rom

@@ -28,7 +28,7 @@ public class DSboxart{
             destination = driveLetter+":"+File.separator+"_nds"+File.separator+"TWiLightMenu"+File.separator+"boxart"+File.separator;            
         }
         else {
-            System.out.println("Using GUI:");
+            System.out.println("Using File Chooser GUI:");
             scan.close();
             JFileChooser directoryPicker = new JFileChooser();
             directoryPicker.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);

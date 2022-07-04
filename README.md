@@ -1,4 +1,4 @@
-# simpleDSboxart
+# simpleNintendoDSboxart
 Gets box arts for Nintendo DS games 
 
 Currently only supports **US**, **EU**, and **Japan** roms

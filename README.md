@@ -8,7 +8,6 @@ https://github.com/KirovAir/TwilightBoxart
 
 # To Run
 
-Download and extract.
 
 Compile 
 > javac DSboxart.java
